@@ -1,8 +1,6 @@
 // App.tsx
-import React from "react";
-import { BrowserRouter, Routes, Route, useRoutes } from "react-router-dom";
+import {  useRoutes } from "react-router-dom";
 import { AuthProvider } from "./contexts/JWTAuthContext";
-import { VideoProvider } from "./contexts/VideoContext";
 import routes from "./routes";
 
 function App() {
@@ -10,7 +8,7 @@ function App() {
   return (
     <>
       <AuthProvider>
-        <VideoProvider>{content}</VideoProvider>
+        {content}
       </AuthProvider>
     </>
   );
