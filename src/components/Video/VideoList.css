@@ -1,0 +1,65 @@
+.myComponentStyle {
+  width: 100%;
+  height: auto;
+}
+.CardStyle {
+  overflow: hidden;
+  max-height: 860px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ColStyle {
+  margin-bottom: 4%;
+}
+.SearchStyle {
+  margin-bottom: 2%;
+}
+.ContainerStyle {
+  margin-top: 10%;
+}
+.stretch-button {
+  flex-grow: 1;
+}
+.not-intrested-button {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.Link-style{
+  text-decoration: none;
+}
+.Title{
+  color: black;
+  margin-left: 15px;
+}
+.description{
+  color: gray;
+}
+
+@media (max-width: 767px) {
+  .ContainerStyle {
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ContainerStyle {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .ContainerStyle {
+    margin-top: 10%;
+  }
+  /* Your CSS for laptop screens (1025px and above) */
+}
+
+/* mac */
+@media only screen and (max-width: 1500px) and (min-width: 1400px) {
+  .ContainerStyle {
+    margin-top: 10%;
+  }
+}

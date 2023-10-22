@@ -29,7 +29,7 @@ const Header: React.FC = () => {
   return (
     <div className="header">
       <div className="d-flex justify-content-end" style={logoutStyle}>      
-      {user && <p style={emailStyle}>{userEmail}</p>}
+      {userEmail && <p style={emailStyle}>{userEmail}</p>}
       <Button variant="outline-light" onClick={handleSubmit}>Logout</Button>
       </div>
     </div>

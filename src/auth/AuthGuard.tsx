@@ -6,7 +6,7 @@ interface AuthGuardProps {
 }
 
 const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
-  const { isAuthenticated, user } = useAuth();
+  const { isAuthenticated } = useAuth();
   const { pathname } = useLocation();
 
   const authenticated: boolean = isAuthenticated;
