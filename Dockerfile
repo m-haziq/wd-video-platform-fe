@@ -6,6 +6,9 @@ RUN npm install
 # required to serve the react app on the live server
 RUN npm install -g serve
 
+COPY .env /app/.env
+
+
 COPY . /app
 WORKDIR /app
 
